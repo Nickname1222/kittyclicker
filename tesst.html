@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>kitty clicker</title>
+</head>
+<body>
+
+    <div style="text-align:center;">
+        <p><h1><em>THE KITTY CLICKER</em></h1></p>
+        <button onclick="incrementCounter()"><img src="pic/maxwell.jpg" alt="maxwell" style="height:500px;"></button>
+        <p id="counter">Count: 0</p>
+       <button id="secretBtn" style="display:none;" onclick="window.open('rank1.html', '_blank')">Rank up?</button>
+       <button id="rollbtn" style="display:none;" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')">SECRET</button>
+    </div>
+    <script>
+      let count = 0;
+      function incrementCounter() {
+        count++;
+        document.getElementById("counter").innerText = "Count: " + count;
+        if (count === 100) {
+          document.getElementById("secretBtn").style.display = "inline-block";
+        }
+         document.getElementById("counter").innerText = "Count: " + count;
+        if (count === 200) {
+          document.getElementById("rollbtn").style.display = "inline-block";
+        }
+      }
+      
+    </script>
+
+
+</body>
+</html>

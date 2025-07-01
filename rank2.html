@@ -1,0 +1,27 @@
+!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Rank2</title>
+</head>
+<body>
+     <div style="text-align:center;">
+        <p><h1><em>THE KITTY CLICKER</em></h1></p>
+        <button onclick="incrementCounter()"><img src="pic/beluga.jpg" alt="maxwell" style="height:500px;"></button>
+        <p id="counter">Count: 0</p>
+       <button id="secretBtn" style="display:none;" onclick="window.open('rank3.html', '_blank')">Rank up?</button>
+    </div>
+    <p><img src="pic/100.png"> <img src="pic/500.png"></p>
+    <script>
+      let count = 0;
+      function incrementCounter() {
+        count++;
+        document.getElementById("counter").innerText = "Count: " + count;
+        if (count === 1000) {
+          document.getElementById("secretBtn").style.display = "inline-block";
+        }
+      }
+    </script>
+
+</body>
+</html>
